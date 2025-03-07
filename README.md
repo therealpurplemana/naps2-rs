@@ -1,53 +1,111 @@
-# NAPS2 Rust Binding POC
+# NAPS2 Rust Bindings
 
-This project demonstrates a minimal Proof of Concept for binding Rust to NAPS2.Sdk on macOS. It shows how to list available scanning devices using the macOS-compatible Apple driver.
+Rust bindings for [NAPS2](https://github.com/cyanfish/naps2) scanning SDK, providing native document scanning capabilities for macOS applications.
 
-## Project Structure
+## Platform Support
 
-- `csharp-helper/`: A small C# application that uses NAPS2.Sdk to list available devices
-- `src/`: Rust code that invokes the C# helper and parses its output
+| Operating System | Architecture | Scanner Drivers | Status |
+|-----------------|--------------|-----------------|--------|
+| macOS 10.15+    | Apple Silicon (arm64) | Apple ICA, SANE, eSCL | ✅ |
+| macOS 10.15+    | Intel (x64) | Apple ICA, SANE, eSCL | ✅ |
+| Linux           | x64          | SANE, eSCL | 🚧 Planned |
+| Linux           | arm64        | SANE, eSCL | 🚧 Planned |
+| Windows         | x64          | WIA, TWAIN, eSCL | 🚧 Planned |
+| Windows         | x86          | WIA, TWAIN, eSCL | 🚧 Planned |
 
-## Requirements
+## Prerequisites
 
-- Rust (latest stable)
-- .NET 8.0 SDK
-- macOS system
-- NAPS2 repository
+- Rust toolchain (1.75.0 or later)
+- .NET SDK 8.0 or later
+- Node.js 14.0 or later (for build scripts)
+- macOS 10.15 or later
 
-## Setup and Build
-
-1. Make sure .NET 8.0 SDK is installed on your system
-2. Compile the C# helper application:
-
-```bash
-cd csharp-helper
-dotnet build
-```
-
-3. Build and run the Rust application:
+## Installation
 
 ```bash
-cargo run
+# Using cargo
+cargo add naps2-rust-bindings
+
+# Or add to Cargo.toml
+[dependencies]
+naps2-rust-bindings = "0.1.0"
 ```
 
-## How it Works
+## Quick Start
 
-Instead of trying to directly bind Rust to the .NET library (which would be complex), this POC takes a simpler approach:
+```rust
+use naps2_rust_bindings::{ScanClient, Driver};
+use anyhow::Result;
 
-1. A small C# application uses NAPS2.Sdk to list available devices and outputs the result as JSON
-2. The Rust application executes this helper and parses the JSON output
-3. This provides a clean, safe interface between Rust and the NAPS2 library
+fn main() -> Result<()> {
+    // Create a scan client
+    let client = ScanClient::new("path/to/helper".into());
 
-## Extending
+    // List available scanners
+    let devices = client.get_devices()?;
+    for device in devices {
+        println!("Found scanner: {} ({})", device.name, device.id);
+    }
 
-To add more NAPS2.Sdk features:
+    // Scan a document
+    if let Some(device) = devices.first() {
+        let result = client.scan_to_images(
+            &device.id,
+            Some(Driver::Apple),
+            300,  // DPI
+            None, // Default paper source
+        )?;
 
-1. Extend the C# helper application with the desired functionality
-2. Update the Rust code to invoke the helper with appropriate parameters
-3. Parse and process the results in Rust
+        println!("Scanned {} pages", result.image_paths.len());
+    }
 
-## Notes
+    Ok(())
+}
+```
 
-- This approach separates the concerns: .NET handles the NAPS2.Sdk integration, Rust handles the application logic
-- For production use, you'd want to add more robust error handling, logging, and configuration options
-- The helper executable path is hardcoded for simplicity but should be configurable in a real application 
+## Features
+
+- ✨ Native scanning support for macOS
+- 🔍 Automatic scanner discovery
+- 📄 Multiple page scanning
+- 🖼️ Image format conversion
+- 📱 Apple Silicon and Intel support
+- 🔒 Safe Rust bindings
+
+## Building from Source
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/naps2-rs.git
+cd naps2-rs
+
+# Build everything
+npm run build
+
+# Run tests
+npm test
+```
+
+## Documentation
+
+For detailed API documentation, run:
+```bash
+cargo doc --open
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [NAPS2](https://github.com/cyanfish/naps2) - The core scanning SDK this project builds upon
+- [Ben Olden-Cooligan](https://github.com/cyanfish) - Creator of NAPS2
+
+## Status
+
+This project is currently in beta. While it's functional for basic scanning operations, some advanced features are still under development. 
