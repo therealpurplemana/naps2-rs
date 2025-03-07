@@ -2,16 +2,29 @@
   "name": "naps2-rust-bindings",
   "version": "0.1.0",
   "description": "Rust bindings for NAPS2.Sdk on macOS",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "download-naps2": "rm -rf vendor/naps2 && mkdir -p vendor && git clone https://github.com/cyanfish/naps2.git vendor/naps2",
     "build:naps2-sdk": "cd vendor/naps2/NAPS2.Sdk && dotnet build -f net8-macos",
     "build:cs": "cd csharp-helper && dotnet build",
     "build:rust": "cargo build",
     "build": "npm run download-naps2 && npm run build:naps2-sdk && npm run build:cs && npm run build:rust",
+    "prepare": "npm run build",
     "start": "cargo run",
     "generate-bindings": "npm run build:naps2-sdk && node scripts/generate-bindings.js",
-    "test": "cargo test"
+    "test": "cargo test",
+    "prepublishOnly": "npm test"
   },
+  "files": [
+    "src/**/*",
+    "csharp-helper/**/*",
+    "scripts/**/*",
+    "Cargo.toml",
+    "Cargo.lock",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=14.0.0"
   },
@@ -21,5 +34,28 @@
   "devDependencies": {
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/naps2-rs.git"
+  },
+  "keywords": [
+    "naps2",
+    "scanning",
+    "rust",
+    "bindings",
+    "macos"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/naps2-rs/issues"
+  },
+  "homepage": "https://github.com/yourusername/naps2-rs#readme",
+  "os": ["darwin"],
+  "cpu": ["x64", "arm64"],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 } 
