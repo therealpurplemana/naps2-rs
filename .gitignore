@@ -2,3 +2,4 @@ csharp-helper/bin/Debug
 csharp-helper/obj/Debug/net8.0-macos/osx-arm64
 node_modules
 target/debug
+vendor/naps2/

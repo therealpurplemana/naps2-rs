@@ -1,1555 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/NAPS2Helper.csproj": {}
+    "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/NAPS2Helper.csproj": {}
   },
   "projects": {
-    "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj": {
-      "version": "1.1.4",
-      "restore": {
-        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj",
-        "projectName": "NAPS2.Escl.Server",
-        "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj",
-        "packagesPath": "/Users/anxman/.nuget/packages/",
-        "outputPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
-          "/Users/anxman/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net462",
-          "net6",
-          "net8",
-          "netstandard2.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              }
-            }
-          },
-          "net8.0": {
-            "targetAlias": "net8",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              }
-            }
-          },
-          "net462": {
-            "targetAlias": "net462",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              }
-            }
-          },
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6",
-          "dependencies": {
-            "EmbedIO": {
-              "target": "Package",
-              "version": "[3.5.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "net8.0": {
-          "targetAlias": "net8",
-          "dependencies": {
-            "EmbedIO": {
-              "target": "Package",
-              "version": "[3.5.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        },
-        "net462": {
-          "targetAlias": "net462",
-          "dependencies": {
-            "EmbedIO": {
-              "target": "Package",
-              "version": "[3.5.2, )"
-            },
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "EmbedIO": {
-              "target": "Package",
-              "version": "[3.5.2, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-      "version": "1.1.4",
-      "restore": {
-        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj",
-        "projectName": "NAPS2.Escl",
-        "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj",
-        "packagesPath": "/Users/anxman/.nuget/packages/",
-        "outputPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
-          "/Users/anxman/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net462",
-          "net6",
-          "net8",
-          "netstandard2.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6",
-            "projectReferences": {}
-          },
-          "net8.0": {
-            "targetAlias": "net8",
-            "projectReferences": {}
-          },
-          "net462": {
-            "targetAlias": "net462",
-            "projectReferences": {}
-          },
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6",
-          "dependencies": {
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "NAPS2.Mdns": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "StandardSocketsHttpHandler": {
-              "target": "Package",
-              "version": "[2.2.0.8, )"
-            },
-            "System.Net.Http": {
-              "target": "Package",
-              "version": "[4.3.4, )"
-            },
-            "System.Private.Uri": {
-              "target": "Package",
-              "version": "[4.3.2, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "net8.0": {
-          "targetAlias": "net8",
-          "dependencies": {
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "NAPS2.Mdns": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "StandardSocketsHttpHandler": {
-              "target": "Package",
-              "version": "[2.2.0.8, )"
-            },
-            "System.Net.Http": {
-              "target": "Package",
-              "version": "[4.3.4, )"
-            },
-            "System.Private.Uri": {
-              "target": "Package",
-              "version": "[4.3.2, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        },
-        "net462": {
-          "targetAlias": "net462",
-          "dependencies": {
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
-            "NAPS2.Mdns": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "StandardSocketsHttpHandler": {
-              "target": "Package",
-              "version": "[2.2.0.8, )"
-            },
-            "System.Net.Http": {
-              "target": "Package",
-              "version": "[4.3.4, )"
-            },
-            "System.Private.Uri": {
-              "target": "Package",
-              "version": "[4.3.2, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "NAPS2.Mdns": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "StandardSocketsHttpHandler": {
-              "target": "Package",
-              "version": "[2.2.0.8, )"
-            },
-            "System.Net.Http": {
-              "target": "Package",
-              "version": "[4.3.4, )"
-            },
-            "System.Private.Uri": {
-              "target": "Package",
-              "version": "[4.3.2, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
-      "version": "1.1.4",
-      "restore": {
-        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj",
-        "projectName": "NAPS2.Images.Mac",
-        "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj",
-        "packagesPath": "/Users/anxman/.nuget/packages/",
-        "outputPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
-          "/Users/anxman/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6",
-          "net8",
-          "net8-macos"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj"
-              }
-            }
-          },
-          "net8.0": {
-            "targetAlias": "net8",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj"
-              }
-            }
-          },
-          "net8.0-macos15.0": {
-            "targetAlias": "net8-macos",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6",
-          "dependencies": {
-            "Eto.Platform.Mac64": {
-              "target": "Package",
-              "version": "[2.8.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "net8.0": {
-          "targetAlias": "net8",
-          "dependencies": {
-            "Eto.Platform.Mac64": {
-              "target": "Package",
-              "version": "[2.8.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        },
-        "net8.0-macos15.0": {
-          "targetAlias": "net8-macos",
-          "dependencies": {
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.13, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.macOS.Ref.net8.0_15.0",
-              "version": "[15.0.8319, 15.0.8319]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.macOS": {
-              "privateAssets": "all"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-      "version": "1.1.4",
-      "restore": {
-        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj",
-        "projectName": "NAPS2.Images",
-        "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj",
-        "packagesPath": "/Users/anxman/.nuget/packages/",
-        "outputPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
-          "/Users/anxman/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net462",
-          "net6",
-          "net8",
-          "netstandard2.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          },
-          "net8.0": {
-            "targetAlias": "net8",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          },
-          "net462": {
-            "targetAlias": "net462",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          },
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "net8.0": {
-          "targetAlias": "net8",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        },
-        "net462": {
-          "targetAlias": "net462",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-      "version": "1.1.4",
-      "restore": {
-        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj",
-        "projectName": "NAPS2.Internals",
-        "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj",
-        "packagesPath": "/Users/anxman/.nuget/packages/",
-        "outputPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
-          "/Users/anxman/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net462",
-          "net6",
-          "net8",
-          "netstandard2.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6",
-            "projectReferences": {}
-          },
-          "net8.0": {
-            "targetAlias": "net8",
-            "projectReferences": {}
-          },
-          "net462": {
-            "targetAlias": "net462",
-            "projectReferences": {}
-          },
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "net8.0": {
-          "targetAlias": "net8",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        },
-        "net462": {
-          "targetAlias": "net462",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
-          "dependencies": {
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "NETStandard.Library": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
-            },
-            "Polyfill": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[4.9.0, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj": {
-      "version": "1.1.4",
-      "restore": {
-        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj",
-        "projectName": "NAPS2.Sdk",
-        "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj",
-        "packagesPath": "/Users/anxman/.nuget/packages/",
-        "outputPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
-          "/Users/anxman/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net462",
-          "net6",
-          "net8",
-          "net8-macos"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          },
-          "net8.0": {
-            "targetAlias": "net8",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          },
-          "net8.0-macos15.0": {
-            "targetAlias": "net8-macos",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          },
-          "net462": {
-            "targetAlias": "net462",
-            "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images/NAPS2.Images.csproj"
-              },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6",
-          "dependencies": {
-            "Grpc.Tools": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.65.0, )"
-            },
-            "GrpcDotNetNamedPipes": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "NAPS2.NTwain": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "NAPS2.PdfSharp": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "NAPS2.Wia": {
-              "target": "Package",
-              "version": "[2.0.3, )"
-            },
-            "SharpZipLib": {
-              "target": "Package",
-              "version": "[1.4.2, )"
-            },
-            "SixLabors.Fonts": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Resources.Extensions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Threading.Tasks.Dataflow": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        },
-        "net8.0": {
-          "targetAlias": "net8",
-          "dependencies": {
-            "Grpc.Tools": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.65.0, )"
-            },
-            "GrpcDotNetNamedPipes": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "NAPS2.NTwain": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "NAPS2.PdfSharp": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "NAPS2.Wia": {
-              "target": "Package",
-              "version": "[2.0.3, )"
-            },
-            "SharpZipLib": {
-              "target": "Package",
-              "version": "[1.4.2, )"
-            },
-            "SixLabors.Fonts": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Resources.Extensions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Threading.Tasks.Dataflow": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        },
-        "net8.0-macos15.0": {
-          "targetAlias": "net8-macos",
-          "dependencies": {
-            "Grpc.Tools": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.65.0, )"
-            },
-            "GrpcDotNetNamedPipes": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.13, )",
-              "autoReferenced": true
-            },
-            "NAPS2.PdfSharp": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "SharpZipLib": {
-              "target": "Package",
-              "version": "[1.4.2, )"
-            },
-            "SixLabors.Fonts": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Resources.Extensions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Threading.Tasks.Dataflow": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            },
-            {
-              "name": "Microsoft.macOS.Ref.net8.0_15.0",
-              "version": "[15.0.8319, 15.0.8319]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.macOS": {
-              "privateAssets": "all"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
-        },
-        "net462": {
-          "targetAlias": "net462",
-          "dependencies": {
-            "Grpc.Tools": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.65.0, )"
-            },
-            "GrpcDotNetNamedPipes": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.3, )",
-              "autoReferenced": true
-            },
-            "NAPS2.NTwain": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "NAPS2.PdfSharp": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "NAPS2.Wia": {
-              "target": "Package",
-              "version": "[2.0.3, )"
-            },
-            "SharpZipLib": {
-              "target": "Package",
-              "version": "[1.4.2, )"
-            },
-            "SixLabors.Fonts": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "System.Collections.Immutable": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Resources.Extensions": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Threading.Tasks.Dataflow": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "ZXing.Net": {
-              "target": "Package",
-              "version": "[0.16.9, )"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/NAPS2Helper.csproj": {
+    "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/NAPS2Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/NAPS2Helper.csproj",
+        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/NAPS2Helper.csproj",
         "projectName": "NAPS2Helper",
-        "projectPath": "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/NAPS2Helper.csproj",
+        "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/NAPS2Helper.csproj",
         "packagesPath": "/Users/anxman/.nuget/packages/",
-        "outputPath": "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/obj/",
+        "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
           "/Users/anxman/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0-macos"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-macos15.0": {
             "targetAlias": "net8.0-macos",
             "projectReferences": {
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj"
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj"
               },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
               },
-              "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj": {
-                "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj"
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj"
               }
             }
           }
@@ -1632,6 +116,1520 @@
       "runtimes": {
         "osx-arm64": {
           "#import": []
+        }
+      }
+    },
+    "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj": {
+      "version": "1.1.4",
+      "restore": {
+        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj",
+        "projectName": "NAPS2.Escl.Server",
+        "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj",
+        "packagesPath": "/Users/anxman/.nuget/packages/",
+        "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NuGet.Config",
+          "/Users/anxman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6",
+          "net8",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              }
+            }
+          },
+          "net8.0": {
+            "targetAlias": "net8",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              }
+            }
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6",
+          "dependencies": {
+            "EmbedIO": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8",
+          "dependencies": {
+            "EmbedIO": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "EmbedIO": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "EmbedIO": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+      "version": "1.1.4",
+      "restore": {
+        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj",
+        "projectName": "NAPS2.Escl",
+        "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj",
+        "packagesPath": "/Users/anxman/.nuget/packages/",
+        "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NuGet.Config",
+          "/Users/anxman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6",
+          "net8",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6",
+            "projectReferences": {}
+          },
+          "net8.0": {
+            "targetAlias": "net8",
+            "projectReferences": {}
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "NAPS2.Mdns": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "StandardSocketsHttpHandler": {
+              "target": "Package",
+              "version": "[2.2.0.8, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Private.Uri": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "NAPS2.Mdns": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "StandardSocketsHttpHandler": {
+              "target": "Package",
+              "version": "[2.2.0.8, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Private.Uri": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "NAPS2.Mdns": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "StandardSocketsHttpHandler": {
+              "target": "Package",
+              "version": "[2.2.0.8, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Private.Uri": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "NAPS2.Mdns": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "StandardSocketsHttpHandler": {
+              "target": "Package",
+              "version": "[2.2.0.8, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Private.Uri": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
+      "version": "1.1.4",
+      "restore": {
+        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj",
+        "projectName": "NAPS2.Images.Mac",
+        "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj",
+        "packagesPath": "/Users/anxman/.nuget/packages/",
+        "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NuGet.Config",
+          "/Users/anxman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6",
+          "net8",
+          "net8-macos"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
+              }
+            }
+          },
+          "net8.0": {
+            "targetAlias": "net8",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
+              }
+            }
+          },
+          "net8.0-macos15.0": {
+            "targetAlias": "net8-macos",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6",
+          "dependencies": {
+            "Eto.Platform.Mac64": {
+              "target": "Package",
+              "version": "[2.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8",
+          "dependencies": {
+            "Eto.Platform.Mac64": {
+              "target": "Package",
+              "version": "[2.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net8.0-macos15.0": {
+          "targetAlias": "net8-macos",
+          "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.13, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.macOS.Ref.net8.0_15.0",
+              "version": "[15.0.8319, 15.0.8319]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.macOS": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+      "version": "1.1.4",
+      "restore": {
+        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj",
+        "projectName": "NAPS2.Images",
+        "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj",
+        "packagesPath": "/Users/anxman/.nuget/packages/",
+        "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NuGet.Config",
+          "/Users/anxman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6",
+          "net8",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          },
+          "net8.0": {
+            "targetAlias": "net8",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+      "version": "1.1.4",
+      "restore": {
+        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj",
+        "projectName": "NAPS2.Internals",
+        "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj",
+        "packagesPath": "/Users/anxman/.nuget/packages/",
+        "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NuGet.Config",
+          "/Users/anxman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6",
+          "net8",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6",
+            "projectReferences": {}
+          },
+          "net8.0": {
+            "targetAlias": "net8",
+            "projectReferences": {}
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Polyfill": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.9.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.ValueTuple": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj": {
+      "version": "1.1.4",
+      "restore": {
+        "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj",
+        "projectName": "NAPS2.Sdk",
+        "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj",
+        "packagesPath": "/Users/anxman/.nuget/packages/",
+        "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NuGet.Config",
+          "/Users/anxman/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6",
+          "net8",
+          "net8-macos"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          },
+          "net8.0": {
+            "targetAlias": "net8",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          },
+          "net8.0-macos15.0": {
+            "targetAlias": "net8-macos",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
+              },
+              "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj": {
+                "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6",
+          "dependencies": {
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.65.0, )"
+            },
+            "GrpcDotNetNamedPipes": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "NAPS2.NTwain": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NAPS2.PdfSharp": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NAPS2.Wia": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SixLabors.Fonts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Resources.Extensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Threading.Tasks.Dataflow": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
+        },
+        "net8.0": {
+          "targetAlias": "net8",
+          "dependencies": {
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.65.0, )"
+            },
+            "GrpcDotNetNamedPipes": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "NAPS2.NTwain": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NAPS2.PdfSharp": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NAPS2.Wia": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SixLabors.Fonts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Resources.Extensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Threading.Tasks.Dataflow": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net8.0-macos15.0": {
+          "targetAlias": "net8-macos",
+          "dependencies": {
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.65.0, )"
+            },
+            "GrpcDotNetNamedPipes": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.13, )",
+              "autoReferenced": true
+            },
+            "NAPS2.PdfSharp": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SixLabors.Fonts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Resources.Extensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Threading.Tasks.Dataflow": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            },
+            {
+              "name": "Microsoft.macOS.Ref.net8.0_15.0",
+              "version": "[15.0.8319, 15.0.8319]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.13, 8.0.13]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.macOS": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.65.0, )"
+            },
+            "GrpcDotNetNamedPipes": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "NAPS2.NTwain": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NAPS2.PdfSharp": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NAPS2.Wia": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SixLabors.Fonts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Resources.Extensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Threading.Tasks.Dataflow": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/RuntimeIdentifierGraph.json"
         }
       }
     }

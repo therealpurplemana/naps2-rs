@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "description": "Rust bindings for NAPS2.Sdk on macOS",
   "scripts": {
+    "download-naps2": "rm -rf vendor/naps2 && mkdir -p vendor && git clone https://github.com/cyanfish/naps2.git vendor/naps2",
+    "build:naps2-sdk": "cd vendor/naps2/NAPS2.Sdk && dotnet build -f net8-macos",
     "build:cs": "cd csharp-helper && dotnet build",
     "build:rust": "cargo build",
-    "build": "npm run build:cs && npm run build:rust",
+    "build": "npm run download-naps2 && npm run build:naps2-sdk && npm run build:cs && npm run build:rust",
     "start": "cargo run",
-    "generate-bindings": "node scripts/generate-bindings.js",
+    "generate-bindings": "npm run build:naps2-sdk && node scripts/generate-bindings.js",
     "test": "cargo test"
   },
   "engines": {

@@ -6212,33 +6212,33 @@
     },
     "NAPS2.Escl/1.1.4": {
       "type": "project",
-      "path": "../../NAPS2.Escl/NAPS2.Escl.csproj",
-      "msbuildProject": "../../NAPS2.Escl/NAPS2.Escl.csproj"
+      "path": "../vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj",
+      "msbuildProject": "../vendor/naps2/NAPS2.Escl/NAPS2.Escl.csproj"
     },
     "NAPS2.Escl.Server/1.1.4": {
       "type": "project",
-      "path": "../../NAPS2.Escl.Server/NAPS2.Escl.Server.csproj",
-      "msbuildProject": "../../NAPS2.Escl.Server/NAPS2.Escl.Server.csproj"
+      "path": "../vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj",
+      "msbuildProject": "../vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj"
     },
     "NAPS2.Images/1.1.4": {
       "type": "project",
-      "path": "../../NAPS2.Images/NAPS2.Images.csproj",
-      "msbuildProject": "../../NAPS2.Images/NAPS2.Images.csproj"
+      "path": "../vendor/naps2/NAPS2.Images/NAPS2.Images.csproj",
+      "msbuildProject": "../vendor/naps2/NAPS2.Images/NAPS2.Images.csproj"
     },
     "NAPS2.Images.Mac/1.1.4": {
       "type": "project",
-      "path": "../../NAPS2.Images.Mac/NAPS2.Images.Mac.csproj",
-      "msbuildProject": "../../NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
+      "path": "../vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj",
+      "msbuildProject": "../vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
     },
     "NAPS2.Internals/1.1.4": {
       "type": "project",
-      "path": "../../NAPS2.Internals/NAPS2.Internals.csproj",
-      "msbuildProject": "../../NAPS2.Internals/NAPS2.Internals.csproj"
+      "path": "../vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj",
+      "msbuildProject": "../vendor/naps2/NAPS2.Internals/NAPS2.Internals.csproj"
     },
     "NAPS2.Sdk/1.1.4": {
       "type": "project",
-      "path": "../../NAPS2.Sdk/NAPS2.Sdk.csproj",
-      "msbuildProject": "../../NAPS2.Sdk/NAPS2.Sdk.csproj"
+      "path": "../vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj",
+      "msbuildProject": "../vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6256,35 +6256,33 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/NAPS2Helper.csproj",
+      "projectUniqueName": "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/NAPS2Helper.csproj",
       "projectName": "NAPS2Helper",
-      "projectPath": "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/NAPS2Helper.csproj",
+      "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/NAPS2Helper.csproj",
       "packagesPath": "/Users/anxman/.nuget/packages/",
-      "outputPath": "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/obj/",
+      "outputPath": "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/anxman/Documents/GitHub/naps2/NuGet.Config",
         "/Users/anxman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0-macos"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet9/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-macos15.0": {
           "targetAlias": "net8.0-macos",
           "projectReferences": {
-            "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj": {
-              "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj"
+            "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj": {
+              "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj"
             },
-            "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
-              "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
+            "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj": {
+              "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj"
             },
-            "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj": {
-              "projectPath": "/Users/anxman/Documents/GitHub/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj"
+            "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj": {
+              "projectPath": "/Users/anxman/Documents/GitHub/naps2-rs/vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj"
             }
           }
         }

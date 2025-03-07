@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eEQvcEisf5g=",
+  "dgSpecHash": "mGGP0AwxUWs=",
   "success": true,
-  "projectFilePath": "/Users/anxman/Documents/GitHub/naps2/rust-naps2-poc/csharp-helper/NAPS2Helper.csproj",
+  "projectFilePath": "/Users/anxman/Documents/GitHub/naps2-rs/csharp-helper/NAPS2Helper.csproj",
   "expectedPackageFiles": [
     "/Users/anxman/.nuget/packages/embedio/3.5.2/embedio.3.5.2.nupkg.sha512",
     "/Users/anxman/.nuget/packages/google.protobuf/3.25.1/google.protobuf.3.25.1.nupkg.sha512",

@@ -15,7 +15,7 @@ require('dotenv').config();
 // Configuration
 const config = {
   // Path to the NAPS2.Sdk assembly
-  sdkAssemblyPath: path.resolve(__dirname, '../../NAPS2.Sdk/bin/Debug/net8-macos/NAPS2.Sdk.dll'),
+  sdkAssemblyPath: path.resolve(__dirname, '../vendor/naps2/NAPS2.Sdk/bin/Debug/net8-macos/NAPS2.Sdk.dll'),
   // Path to the C# helper project
   helperProjectPath: path.resolve(__dirname, '../csharp-helper'),
   // Output directory for generated Rust code

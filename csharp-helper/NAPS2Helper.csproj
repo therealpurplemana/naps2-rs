@@ -9,10 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- Use local NAPS2 SDK projects -->
-    <ProjectReference Include="../../NAPS2.Sdk/NAPS2.Sdk.csproj" />
-    <ProjectReference Include="../../NAPS2.Images.Mac/NAPS2.Images.Mac.csproj" />
-    <ProjectReference Include="../../NAPS2.Escl.Server/NAPS2.Escl.Server.csproj" />
+    <!-- Use NAPS2 SDK projects from vendor directory -->
+    <ProjectReference Include="../vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj" />
+    <ProjectReference Include="../vendor/naps2/NAPS2.Images.Mac/NAPS2.Images.Mac.csproj" />
+    <ProjectReference Include="../vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj" />
     
     <!-- Additional references for better scanner detection -->
     <PackageReference Include="NAPS2.Sane.Binaries" Version="1.1.0" />
