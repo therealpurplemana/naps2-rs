@@ -4,9 +4,13 @@ using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Linq;
-using NAPS2.Images;
+#if MACOS
 using NAPS2.Images.Mac;
+#else
+using NAPS2.Images.Gdi;
+#endif
 using NAPS2.Scan;
+using NAPS2.Images;
 
 namespace NAPS2Helper.Features
 {
@@ -14,7 +18,11 @@ namespace NAPS2Helper.Features
     {
         public static async Task<string> ListDevices(string driverName)
         {
+#if MACOS
             using var scanningContext = new ScanningContext(new MacImageContext());
+#else
+            using var scanningContext = new ScanningContext(new GdiImageContext());
+#endif
             var controller = new ScanController(scanningContext);
             
             Driver driver = Driver.Default;
@@ -45,7 +53,11 @@ namespace NAPS2Helper.Features
         
         public static async Task<string> ScanToImages(string deviceId, string driverName, int dpi, string paperSource)
         {
+#if MACOS
             using var scanningContext = new ScanningContext(new MacImageContext());
+#else
+            using var scanningContext = new ScanningContext(new GdiImageContext());
+#endif
             var controller = new ScanController(scanningContext);
             
             // Find the device by ID
@@ -116,7 +128,11 @@ namespace NAPS2Helper.Features
                 }
                 
                 // Initialize the scanning context
+#if MACOS
                 using var scanningContext = new ScanningContext(new MacImageContext());
+#else
+                using var scanningContext = new ScanningContext(new GdiImageContext());
+#endif
                 var imageContext = scanningContext.ImageContext;
                 
                 // Output file paths
