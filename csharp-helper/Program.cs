@@ -5,7 +5,9 @@ using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Threading.Tasks;
 using NAPS2Helper.Features;
+#if MACOS
 using NAPS2.Images.Mac;
+#endif
 using NAPS2.Scan;
 
 namespace NAPS2Helper
