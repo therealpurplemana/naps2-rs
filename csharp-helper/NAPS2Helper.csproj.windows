@@ -6,17 +6,27 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ApplicationId>com.naps2.helper</ApplicationId>
+    <!-- Define the WINDOWS compilation symbol for Windows builds -->
+    <DefineConstants>WINDOWS</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
     <!-- Use NAPS2 SDK projects from vendor directory -->
-  <ProjectReference Include="../vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj" />
+    <ProjectReference Include="../vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj" />
     <ProjectReference Include="../vendor/naps2/NAPS2.Images.Gdi/NAPS2.Images.Gdi.csproj" />
     <ProjectReference Include="../vendor/naps2/NAPS2.Images.Wpf/NAPS2.Images.Wpf.csproj" />
     <ProjectReference Include="../vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj" />
-    <ProjectReference Include="../vendor/naps2/NAPS2.Lib.WinForms/NAPS2.Lib.WinForms.csproj" />    
+    <ProjectReference Include="../vendor/naps2/NAPS2.Lib.WinForms/NAPS2.Lib.WinForms.csproj" />
     <!-- Additional references for better scanner detection -->
     <PackageReference Include="NAPS2.Sane.Binaries" Version="1.1.0" />
+    <!-- Required for 32-bit worker process for TWAIN scanning in 64-bit environment -->
+    <PackageReference Include="NAPS2.Sdk.Worker.Win32" Version="1.0.0" />
+    <!-- Logging dependencies -->
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <!-- Required for logging and DI -->
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
   </ItemGroup>
 
 </Project> 
