@@ -3,8 +3,12 @@ use naps2_poc::{Naps2Client, Driver, PaperSource};
 use std::path::PathBuf;
 
 fn main() -> Result<()> {
-    // Path to the compiled helper application - corrected path
-    let helper_path = PathBuf::from("./csharp-helper/bin/Debug/net8.0-macos/osx-arm64/NAPS2Helper.app/Contents/MacOS/NAPS2Helper");
+    // Determine the helper path based on the operating system
+    let helper_path = if cfg!(target_os = "windows") {
+        PathBuf::from("C:/naps2-rs/csharp-helper/bin/Debug/net9.0-windows7.0/NAPS2Helper.exe")
+    } else {
+        PathBuf::from("./csharp-helper/bin/Debug/net8.0-macos/osx-arm64/NAPS2Helper.app/Contents/MacOS/NAPS2Helper")
+    };
     
     // Create a new NAPS2 client
     let client = Naps2Client::new(helper_path);
@@ -12,11 +16,17 @@ fn main() -> Result<()> {
     println!("NAPS2.Sdk Rust Binding Example");
     println!("==============================");
     
-    // Try all Mac-compatible drivers to find scanners
-    for driver in &[Driver::Default, Driver::Apple, Driver::Sane, Driver::Escl] {
+    // Try all compatible drivers to find scanners
+    let drivers = if cfg!(target_os = "windows") {
+        vec![Driver::Default, Driver::Wia, Driver::Twain]
+    } else {
+        vec![Driver::Default, Driver::Apple, Driver::Sane, Driver::Escl]
+    };
+
+    for driver in drivers {
         println!("\nTrying {} driver:", driver.to_string());
         
-        match client.scan().get_devices_with_driver(Some(*driver)) {
+        match client.scan().get_devices_with_driver(Some(driver)) {
             Ok(devices) => {
                 if devices.is_empty() {
                     println!("No devices found");
@@ -55,7 +65,7 @@ fn main() -> Result<()> {
                             println!("Using {:?} source", paper_source);
                             
                             // Perform scan
-                            match client.scan().scan_to_images(&device.id, Some(*driver), 300, Some(paper_source)) {
+                            match client.scan().scan_to_images(&device.id, Some(driver), 300, Some(paper_source)) {
                                 Ok(scan_result) => {
                                     println!("Scan complete! {} pages scanned", scan_result.image_paths.len());
                                     println!("Images saved to: {}", scan_result.temp_directory);
