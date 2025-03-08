@@ -1,5 +1,5 @@
-csharp-helper/bin/Debug
-csharp-helper/obj/Debug/net8.0-macos/osx-arm64
+csharp-helper/bin
+csharp-helper/obj
 node_modules
 target/debug
 vendor/naps2/

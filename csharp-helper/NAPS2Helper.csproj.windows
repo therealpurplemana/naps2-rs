@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-macos</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationId>com.naps2.helper</ApplicationId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Use NAPS2 SDK projects from vendor directory -->
+  <ProjectReference Include="../vendor/naps2/NAPS2.Sdk/NAPS2.Sdk.csproj" />
+    <ProjectReference Include="../vendor/naps2/NAPS2.Images.Gdi/NAPS2.Images.Gdi.csproj" />
+    <ProjectReference Include="../vendor/naps2/NAPS2.Images.Wpf/NAPS2.Images.Wpf.csproj" />
+    <ProjectReference Include="../vendor/naps2/NAPS2.Escl.Server/NAPS2.Escl.Server.csproj" />
+    <ProjectReference Include="../vendor/naps2/NAPS2.Lib.WinForms/NAPS2.Lib.WinForms.csproj" />    
+    <!-- Additional references for better scanner detection -->
+    <PackageReference Include="NAPS2.Sane.Binaries" Version="1.1.0" />
+  </ItemGroup>
+
+</Project> 
